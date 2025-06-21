@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        /* universal selector -> "*" */
+        *{
+            background-color: #434343;
+            color: white;
+        }
+        /* type-selector -> tags */
+        h1{
+            color: #cc1d1d;
+        }
+        pre{
+            font-size: small;
+        }
+        p{
+            font-size: x-large;
+        }
+        /* class selector */
+        .para{
+            color: rgb(194, 82, 194);
+        }
+        /* id selector */
+        #para{
+            color: darkcyan;
+        }
+        /* attribute selector */
+        input[type]{
+            background: #ac1313;
+        }
+        input{
+            background: #000;
+        }
+        /* descendent selector */
+        .descendent p{
+            color: aqua;
+        }
+        /* child selector */
+        .descendent>p{
+            color: #ac1313;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <input type="button" value="submit">
+    <h1 title="heading hai bhai heading hai">This is my heading </h1>
+    <div class="descendent">
+        <p>child1 +sibling
+            <div>
+                <p>grandchild1</p>
+            </div>
+        </p>
+        <p>child2 + sibling
+            <div>
+                <p>grandchild2</p>
+            </div>
+        </p>
+    </div>
+    <p class="para" id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam repellat voluptatem nihil reiciendis, distinctio vel rem necessitatibus eius odit, maxime blanditiis commodi quaerat laborum placeat!</p>
+    <div><a title="heading hai bhai heading hai" href="#">Check it out </a>
+    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet vero sed exercitationem magni consequatur facere.</p>
+    </div>
+    <pre class="para" id="roll2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam vitae omnis est recusandae adipisci tenetur consectetur voluptate mollitia iusto pariatur!</pre>
+  </body>
+</html>
