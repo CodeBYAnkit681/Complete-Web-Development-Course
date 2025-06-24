@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selection</title>
+    <style>
+        a:link{
+            background-color: blue;
+            color: white;
+        }
+        a:hover{
+            background-color: red;
+            font-size: larger;
+        }
+        a:visited{
+            color: black;
+            background-color: #fff;
+        }
+        a:active{
+            color: darkgoldenrod;
+            background-color: rgb(222, 14, 49);
+        }
+        h1::first-letter{
+            color: brown;
+        }
+        p::first-line{
+            color: brown;
+        }
+        /* befor and after  */
+        h1::before{
+            content: "Hello";
+            background-color: green;
+        }
+        h1::after{
+            content: "hii";
+            background-color: blue;
+        }
+        h1{
+            /* border-width: 2px;
+            border-style: dashed;
+            border-color: aquamarine; */
+            border : 2px solid red;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1><u>Pseudo class selectors</u></h1>
+    <ul>
+        <li>hover</li>
+        <li>visited</li>
+        <li>active</li>
+        <li>link</li>
+    </ul>
+    <a href="#">Go to Visit</a>
+    <p>Ram was going is holiday</p>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Combinators</title>
+  <style>
+    /* Descendant selector */
+    div p {
+      color: blue;
+    }
+
+    /* Child selector */
+    div > p {
+      font-weight: bold;
+    }
+
+    /* Adjacent sibling */
+    h2 + p {
+      color: red;
+    }
+
+    /* General sibling */
+    h2 ~ p {
+      background-color: lightyellow;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Combinator Demo</h2>
+  <p>1️⃣ I'm adjacent sibling to h2 (red + yellow)</p>
+  <p>2️⃣ I'm general sibling to h2 (yellow only)</p>
+
+  <div>
+    <p>3️⃣ I'm direct child (bold + blue)</p>
+    <section>
+      <p>4️⃣ I'm nested (blue only)</p>
+    </section>
+  </div>
+
+</body>
+</html>

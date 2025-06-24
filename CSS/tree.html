@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM tree</title>
+    <!-- inner css -->
+    <style>
+      /* type selector */
+      h1 {
+        color: rgb(33, 199, 144);
+      }
+      /* universal selector */
+      * {
+        /* background-color: #b3cf18; */
+        color: rgb(20, 97, 165);
+      }
+      /* class selector*/
+      .para1 {
+        color: rgb(196, 110, 110);
+      }
+      /* id selector */
+      #anchor {
+        color: rgb(107, 107, 211);
+      }
+      div p {
+        /* background-color: #fff; */
+        color: chocolate;
+      }
+      /* it works because #secondDiv Comes after .para1 but if we try vice versa it will not work */
+      .para1 + #secondDiv{
+        background-color: #245e8a;
+      }
+
+      #firstDiv>p{
+        /* background-color: green; */
+      }
+      /* General Sibling Selector */
+      header ~ p{
+        background-color: #1874cf;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Today is the good day</h1>
+    </header>
+    <div id="firstDiv">
+      <p class="para1">
+        i am a child of div <a id="anchor" href="#">Read More</a>
+      </p>
+      <div id="secondDiv">
+        <p>
+          i am grandchild of first div
+        </p>
+      </div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, unde
+      accusantium itaque quasi fugit odio a perferendis. Laudantium aspernatur
+      doloribus magnam aperiam porro dignissimos quae?
+    </p>
+
+    <p>class selector have higher priority then descendent selector</p>
+  </body>
+</html>

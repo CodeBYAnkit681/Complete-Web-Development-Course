@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pseudo-Class & Pseudo-Element Example</title>
+  <style>
+    /* Pseudo-Class: Hover */
+    a:hover {
+      color: red;
+      text-decoration: underline;
+    }
+
+    /* Pseudo-Class: First child */
+    p:first-child {
+      /* font-weight; */
+      color: aqua;
+      background: #000;
+    }
+
+    /* Pseudo-Class: Focus */
+    input:focus {
+      border: 2px solid green;
+      outline: none;
+    }
+
+    /* Pseudo-Element: First letter */
+    /* p::first-letter {
+      font-size: 24px;
+      color: orange;
+    } */
+
+    /* Pseudo-Element: Before */
+    h2::before {
+      content: "👉 ";
+    }
+
+    /* Pseudo-Element: After */
+    h2::after {
+      content: " 👈";
+    }
+  </style>
+</head>
+<body>
+
+    <h2>Pseudo Selectors in CSS</h2>
+    
+    <p>This is the first paragraph.</p>
+  <p>This is another paragraph.</p>
+
+  <a href="#">Hover over this link</a><br><br>
+
+  <input type="text" placeholder="Click to focus" />
+
+</body>
+</html>

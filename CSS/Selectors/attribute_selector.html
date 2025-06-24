@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Attribute Selector Example</title>
+  <style>
+    /* Target any element with a title attribute */
+    [title] {
+      color: green;
+      font-weight: bold;
+    }
+
+    /* Target input elements with type="text" */
+    input[type="text"] {
+      border: 2px solid blue;
+      padding: 5px;
+    }
+
+    /* Target anchor tags with target="_blank" */
+    a[target="_blank"] {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <p title="tooltip">This paragraph has a title attribute.</p>
+
+  <input type="text" placeholder="Enter your name" />
+  <input type="password" placeholder="Enter your password" />
+
+  <a href="https://google.com" target="_blank">Google (opens in new tab)</a><br>
+  <a href="https://openai.com">OpenAI (same tab)</a>
+
+</body>
+</html>
