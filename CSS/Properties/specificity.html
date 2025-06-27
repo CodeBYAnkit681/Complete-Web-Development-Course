@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specifity</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background: #000;
+        }
+        #id{
+            color: brown;
+            /* background: #000; */
+        }
+        /* class selector */
+        h1[title="hero"]{
+            color: rosybrown ;
+        }
+        /* .hii{
+            color: blue;
+        }
+        .hello{
+            color: yellow;
+        }
+        .head{
+            color: green;
+        } */
+        /* attribute selector  */
+        /* element selector  */
+        h1::first-line{
+           color: red;
+       }
+        h1{
+            color: gray;
+        }
+        h1{
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="id" title="hero" class="head hii hello" >This is the heading Lorem, ipsum dolor Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet nostrum dolorem excepturi molestias animi! A.
+
+    </h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, non!</p>
+    
+</body>
+</html>

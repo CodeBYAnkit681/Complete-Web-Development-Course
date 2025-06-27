@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boxShadows</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .cards{
+            width: 500px;
+            height: 500px;
+            /* border: 2px solid gray;  */
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+            margin-top: 20px;
+        }
+        .cards div{
+            width: 45%;
+            height: 40%;
+            /* border: 2px solid blue; */
+            outline: 2px solid blue;
+            border-radius: 10px;
+            margin: 5px;
+            /* box-shadow: 7px 7px 2px 2px #be1935; */
+
+        }
+        p::first-line{
+            color: brown;
+            /* outline: 2px solid green; */
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <div class="card1">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea dicta nam nemo nostrum minus eos, distinctio ipsa excepturi repudiandae modi error ad eligendi rerum. Deleniti.</p>
+        </div>
+        <div class="card2"></div>
+        <div class="card3"></div>
+        <div class="card4"></div>
+    </div>
+    
+    
+</body>
+</html>

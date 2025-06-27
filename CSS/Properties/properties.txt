@@ -1,0 +1,39 @@
+
+_______________________________________________________________________________________________________________________________________________________________________
+color - defines text color and its properties can be given in multiple ways 
+1. name
+2. rgb
+3. rgba
+4. hexadecimal 
+5. hsl (hue , saturation and light)
+6. hsla
+_______________________________________________________________________________________________________________________________________________________________________
+background image , background-size (auto,cover,contain,width height) , background-position,background-repeat,background-attachment,background-color
+_______________________________________________________________________________________________________________________________________________________________________
+px,rem,em,vh,vw, % and vmin,mih-height,min-width etc
+_______________________________________________________________________________________________________________________________________________________________________-
+cascade algorithm
+Position and order of appearance: the order in which your CSS rules appear.
+Specificity: an algorithm that determines which CSS selector has the strongest match.
+Origin: the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS.
+Importance: some CSS rules are weighted more heavily than others, especially with the !important rule type.
+
+Inline Style > ID Selector >
+ attribute selectors > Class selectors and pseudo-classes > Element selectors and pseudo-elements> Universal Selector
+
+order of specificity 
+Specificity Calculation
+To calculate specificity, assign a value to each part of the selector:
+
+Universal Selector: 0
+Element selectors and pseudo-elements: 1
+Class selectors, attribute selectors, and pseudo-classes: 10
+ID selectors: 100
+Inline styles: 1000
+
+!important
+
+______________________________________________________________________________________________________________________________________________________________________
+
+boxShadow,box sizing, outline , and Position
+_______________________________________________________________________________________________________________________________________________________________________
