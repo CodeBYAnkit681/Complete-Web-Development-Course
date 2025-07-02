@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Card</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      body {
+        display: flex;
+        background-color: #e8a6a6;
+      }
+      .card {
+        margin: auto;
+        margin-top: 20vh;
+        width: 280px;
+        background: white;
+        height: 450px;
+        border-radius: 5%;
+        box-sizing: border-box;
+      }
+      img {
+        width: 100%;
+        height: 50%;
+        border-radius: 5%;
+      }
+      .about,
+      .contact {
+        margin-top: 10px;
+        height: 22%;
+        overflow: hidden;
+        font-size: small;
+      }
+      .box{
+        padding: 10px;
+      }
+      .about p,
+      .contact p {
+        margin-top: 5px;
+      }
+      #headA {
+        display: inline-block;
+        border-bottom: 5px solid rgb(124, 207, 230);
+      }
+      .contact>div>i{
+        padding-inline: 12px ;
+        margin-top: 10px;
+        font-size: large;
+      }
+      .contact>div{
+        padding-top: 5px;
+        padding-left: 15px;
+        margin: auto;
+        padding-bottom: 5px;
+      }
+      hr{
+        width: 90%;
+        margin: auto;
+      }
+      .creator{
+        width: 100%;
+        font-size: small;
+        display: inline-block;
+        margin-inline: 25%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        src="https://images.pexels.com/photos/31098335/pexels-photo-31098335.jpeg"
+        alt=""
+      />
+      <div class="box">
+        <div class="about">
+          <h2 id="headA">About</h2>
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
+            mollitia reiciendis ipsum facere, animi,
+          </p>
+        </div>
+        <div class="contact">
+          <h2 id="headA">Contact</h2>
+          <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+        <hr>
+        <div class="creator">
+            <p>By: <b>Ankit Singh</b></p>
+            <p>Image by <b>Pexels</b></p>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="card">
+      <img
+        src="https://images.pexels.com/photos/31098335/pexels-photo-31098335.jpeg"
+        alt=""
+      />
+      <div class="box">
+        <div class="about">
+          <h2 id="headA">About</h2>
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
+            mollitia reiciendis ipsum facere, animi,
+          </p>
+        </div>
+        <div class="contact">
+          <h2 id="headA">Contact</h2>
+          <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+        <hr>
+        <div class="creator">
+            <p>By: <b>Ankit Singh</b></p>
+            <p>Image by <b>Pexels</b></p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img
+        src="https://images.pexels.com/photos/31098335/pexels-photo-31098335.jpeg"
+        alt=""
+      />
+      <div class="box">
+        <div class="about">
+          <h2 id="headA">About</h2>
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
+            mollitia reiciendis ipsum facere, animi,
+          </p>
+        </div>
+        <div class="contact">
+          <h2 id="headA">Contact</h2>
+          <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+        <hr>
+        <div class="creator">
+            <p>By: <b>Ankit Singh</b></p>
+            <p>Image by <b>Pexels</b></p>
+        </div>
+      </div>
+    </div> -->
+  </body>
+</html>

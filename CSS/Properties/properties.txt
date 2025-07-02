@@ -35,5 +35,37 @@ Inline styles: 1000
 
 ______________________________________________________________________________________________________________________________________________________________________
 
-boxShadow,box sizing, outline , and Position
+boxShadow ,
+box sizing (border-box and content-box),
+outline , and
+Position -(absolute, relative , fixed and sticky) by default our page have position sticky
+_______________________________________________________________________________________________________________________________________________________________________
+
+list stylying - list-style, list-style-type, list-style-position,list-style-image 
+
+float property and clear
+ 
+overflow property , white-space
+
+visibility - hidden
+display- inline, inline-block, none
+
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+css variables - global and local , it can cintain any value , image url and string etc
+
+media queries - @media not|only mediatype and expression { css code}
+
+flex - justify content, align item , main axis and cross axis , flex direction ,flex wrap , align content, flex flow, gap(row & column)
+
+now items flex - order , flex-grow, flex-shrink, align self(container m se align content hatana pdega if necessary)
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+grid,grid cell , grid track , grid area, grid lines,  grid template row [naming bhi de skte ho ], grid template column , grid template -area ("", "","") , fr unit , 
+justifyitems, align items , repeat(4,1fr), repeat(4,minmax(100px, 1fr)) , justify-content, align- content , place content
+
+items - grid :- (grid row and grid column like matrix) or use grid row-start and end, grid area , align self
+
 _______________________________________________________________________________________________________________________________________________________________________

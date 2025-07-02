@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: gray;
+        }
+        .boxes{
+            display: flex;
+            /* justify items doen't exist for flex */
+            justify-content: center;
+            /* align-items: center; */
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* align-content: flex-start; */
+            /* flex flow is the combination of flex direction and flex wrap  */
+            gap: 10px;
+            /* flex-flow: column-reverse wrap; */
+            height: 50vh;
+            border: 2px solid red;
+            background-color: #676363;
+        }
+        .item{
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            border: 2px solid white;
+        }
+        .item1{
+            /* order basically used to redefined the sequence */
+            /* order: 2; */
+            /* flex-grow: 4; */
+            align-self: flex-end;
+
+        }
+        .item2{
+            /* order: 2; */
+        }
+        @media screen and (max-width:800px) {
+            .boxes{
+                overflow: auto;
+                height: 100vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- boxes act as container here -->
+    <div class="boxes">
+
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,1 @@
+Excercise2 :- create a multicolour background with change in box  website  according to its size and use css variables to change the color

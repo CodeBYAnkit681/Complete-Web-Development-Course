@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid part-1</title>
+    <!-- <link rel="stylesheet" href="Grid1.css"> -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .boxes {
+        border: 2px solid black;
+        margin: 5px;
+        display: grid;
+        grid-template-columns: [pehla] 150px [dusra] 100px [teesra] 120px;
+        /* grid-template-rows: 100px 150px; */
+        gap: 10px 0px;
+      }
+      .items {
+        width: 40px;
+        height: 40px;
+        border: 2px solid rgb(20, 157, 203);
+        text-align: center;
+      }
+      .item7{
+        grid-row: 1/2;
+        grid-column: teesra/4;
+      }
+      .item6{
+        grid-row: 2/3;
+        grid-column: 3/4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+      <div class="items ">5</div>
+      <div class="items item6">6</div>
+      <div class="items item7">7</div>
+    </div>
+  </body>
+</html>

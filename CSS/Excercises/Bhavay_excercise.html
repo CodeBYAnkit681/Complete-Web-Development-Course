@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Colors</title>
+  <style>
+    :root {
+      --bg-color1: rgb(253, 0, 42);
+      --bg-color2: rgb(76, 229, 16);
+      --bg-color3: rgb(219, 253, 0);
+    }
+
+    body {
+        height: 100vh;
+      margin: 0;
+      background: var(--bg-color1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box {
+        width: 40vw;
+        height: 50vh;
+      background: var(--bg-color2);
+      
+    }
+    @media screen and (min-width:480px) and (max-width: 768px) {
+      body{
+        background-color: var(--bg-color2);
+    }
+    .box{
+          background-color: var(--bg-color3);
+
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+        body{
+        background-color: var(--bg-color3);
+    }
+    .box{
+          background-color: var(--bg-color1);
+
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* .profilebox {
+        background-color: #8b0909;
+        width: 350px;
+        border-radius: 12px;
+        box-shadow: 100px 20px 15px rgba(19, 24, 174, 0.2);
+        overflow: hidden;
+      }
+      .profilehead {
+        position: relative;
+      }
+      hr {
+        border: 10px green;
+        border-top: 20px solid #3e0e0e;
+        margin: 20px 1%;
+      } */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(233, 233, 114);
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .profilebox {
+        margin: auto;
+        margin-top: 100px;
+        width: 248px;
+        height: 450px;
+        border: 1px solid gray;
+        border-radius: 7px;
+        background-color: #fff;
+      }
+      .profilehead {
+        width: 100%;
+        height: 45%;
+        overflow: hidden;
+        position: relative;
+      }
+      .profilehead img {
+        /* width: 100%; */
+        border-radius: 7px;
+        height: 99%;
+      }
+      .profilehead strong {
+        padding: 2px;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        color: #fff;
+        background: #423e3e;
+        font-size: larger;
+      }
+      .details {
+        height: 55%;
+        padding: 10px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        box-sizing: border-box;
+      }
+      #line {
+        border: 2.5px solid rgb(0, 213, 255);
+        /* display: inline; */
+        width: 45px;
+      }
+      .details p {
+        margin-top: 5px;
+        font-size: small;
+        word-spacing: 2.5px;
+      }
+      #Contact {
+        margin-top: 12px;
+      }
+      #social {
+        margin-top: 10px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+        /* margin: auto; */
+      }
+      .details a {
+        padding: 10px;
+      }
+      #para {
+        width: 100%;
+       margin-left: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profilebox">
+      <div class="profilehead">
+        <img
+          src="https://images.pexels.com/photos/3720424/pexels-photo-3720424.jpeg"
+          alt="Profile Image"
+          width="250px"
+        />
+        <p><strong>Bhavay</strong></p>
+      </div>
+
+      <div class="details">
+        <h3>About</h3>
+        <div id="line"></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nisi
+          officiis ipsa, voluptas quam facere quibusdam obcaecati ad reiciendis,
+          commodi facilis ipsum pariatur sapiente quisquam quasi laborum illo
+          possimus. Quae?.
+        </p>
+
+        <h3 id="Contact">Contact</h3>
+        <div id="line"></div>
+
+        <div id="social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-google"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <hr />
+        <div id="para">
+          <p>Made by Bhavay Chhirang</p>
+        </div>
+      </div>
+    </div>
+    <div class="profilebox">
+      <div class="profilehead">
+        <img
+          src="https://images.pexels.com/photos/3720424/pexels-photo-3720424.jpeg"
+          alt="Profile Image"
+          width="250px"
+        />
+        <p><strong>Bhavay</strong></p>
+      </div>
+
+      <div class="details">
+        <h3>About</h3>
+        <div id="line"></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nisi
+          officiis ipsa, voluptas quam facere quibusdam obcaecati ad reiciendis,
+          commodi facilis ipsum pariatur sapiente quisquam quasi laborum illo
+          possimus. Quae?.
+        </p>
+
+        <h3 id="Contact">Contact</h3>
+        <div id="line"></div>
+
+        <div id="social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-google"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <hr />
+        <div id="para">
+          <p>Made by Bhavay Chhirang</p>
+        </div>
+      </div>
+    </div>
+    <div class="profilebox">
+      <div class="profilehead">
+        <img
+          src="https://images.pexels.com/photos/3720424/pexels-photo-3720424.jpeg"
+          alt="Profile Image"
+          width="250px"
+        />
+        <p><strong>Bhavay</strong></p>
+      </div>
+
+      <div class="details">
+        <h3>About</h3>
+        <div id="line"></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nisi
+          officiis ipsa, voluptas quam facere quibusdam obcaecati ad reiciendis,
+          commodi facilis ipsum pariatur sapiente quisquam quasi laborum illo
+          possimus. Quae?.
+        </p>
+
+        <h3 id="Contact">Contact</h3>
+        <div id="line"></div>
+
+        <div id="social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-google"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <hr />
+        <div id="para">
+          <p>Made by Bhavay Chhirang</p>
+        </div>
+      </div>
+    </div>
+    <div class="profilebox">
+      <div class="profilehead">
+        <img
+          src="https://images.pexels.com/photos/3720424/pexels-photo-3720424.jpeg"
+          alt="Profile Image"
+          width="250px"
+        />
+        <p><strong>Bhavay</strong></p>
+      </div>
+
+      <div class="details">
+        <h3>About</h3>
+        <div id="line"></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nisi
+          officiis ipsa, voluptas quam facere quibusdam obcaecati ad reiciendis,
+          commodi facilis ipsum pariatur sapiente quisquam quasi laborum illo
+          possimus. Quae?.
+        </p>
+
+        <h3 id="Contact">Contact</h3>
+        <div id="line"></div>
+
+        <div id="social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-google"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <hr />
+        <div id="para">
+          <p>Made by Bhavay Chhirang</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

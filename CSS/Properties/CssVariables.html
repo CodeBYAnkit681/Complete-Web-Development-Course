@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>variables</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        :root{
+            --color : #df1010;
+            --seccolor : #169d82;
+            --abra: 0.1;
+            /* --url:"https://images.pexels.com/photos/2325447/pexels-photo-2325447.jpeg" */
+        }
+        body{
+            background-color: var(--color);
+            color: white;
+            /* opacity: var(--dpop); */
+        }
+        li{
+            list-style-position: inside;
+            background: var(--color);
+        }
+        p{
+            background-color: var(--seccolor);
+        }
+        li:first-child{
+            background-color: var(--seccolor);
+            opacity: var(--abra);
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="box" >
+      <nav>
+        <ul>
+          <li>home</li>
+          <li>about</li>
+          <li>contact</li>
+          <li>shop</li>
+        </ul>
+      </nav>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+          repellat debitis vero officiis, odit ad molestias tempore obcaecati
+          sed voluptatibus ducimus assumenda inventore hic a magni totam minima
+          provident, pariatur quis tenetur id temporibus quibusdam! Explicabo
+          consequatur nesciunt debitis laboriosam est repellat officia ab
+          consequuntur.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

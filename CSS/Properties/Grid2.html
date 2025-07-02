@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid part-2</title>
+    <!-- <link rel="stylesheet" href="Grid1.css"> -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .boxes {
+        border: 2px solid black;
+        margin: 5px;
+        height: 600px;
+        width: 95%;
+        display: grid;
+        /* grid-template-areas: "nav nav nav"
+                             "main empty side"
+                             "footer footer footer"; */
+        /* grid-template-columns: repeat(4,1fr); */
+        /* grid-template-columns: 1fr 2fr 1fr 1fr; */
+        grid-template-rows: repeat(5,90px);
+        grid-template-columns: repeat(3,90px);
+        /* justify-items: center;
+        align-items: center; */
+
+      }
+      .items {
+        width: 80px;
+        height: 40px;
+        border: 2px solid rgb(20, 157, 203);
+        text-align: center;
+      }
+      .item1{
+        /* grid-area: nav;
+        background-color: #1ccfc3; */
+      }
+      .item2{
+        /* grid-area: main;
+        background-color: lightblue; */
+      }
+      .item3{
+        /* grid-area: empty;
+        background-color: lightcoral; */
+      }
+      .item4{
+        /* grid-area: side;
+        background-color: lightgreen; */
+      }
+      .item5{
+        /* grid-area: footer;
+        background-color: lightpink; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div class="items item1">Navbar</div>
+      <div class="items item2">Main</div>
+      <div class="items item3">empty</div>
+      <div class="items item4">side</div>
+      <div class="items item5">footer</div>
+    </div>
+  </body>
+</html>
