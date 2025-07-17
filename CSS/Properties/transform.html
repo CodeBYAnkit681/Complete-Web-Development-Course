@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tranformation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .boxes{
+            width: 80vw;
+            height: 80vh;
+            border: 2px solid red;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 2px solid rgb(21, 203, 72);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* transform: rotate(25deg); */
+            /* transform: rotateX(25deg);
+            transform: rotateY(25deg); */
+            /* transform: rotateZ(25deg); */
+            /* transform: scale(2 , 0.5); */
+            /* transform: scaleX(2);
+            transform: scaleY(2);
+            transform: scaleZ(2); */
+            /* transform: skew(20deg); */
+            /* transform: skewX(20deg); */
+            /* transform: skewY(20deg); */
+            /* transform: translate(100px , 50%); */
+            /* transform: matrix(scaleX,skewX,skewY,scaleY,translateX,translateY); */
+            transform: matrix(2,0,1,2,100,50);
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">
+            Box
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outlines</title>
+    <style>
+        body{
+            background-color: rgb(51, 50, 50);
+
+        }
+        body>div{
+            margin: auto;
+            border: 2px solid rgb(62, 207, 51);
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            background-color: rgb(2, 48, 63);
+
+            color: rgb(183, 183, 178);
+            outline: 10px solid rgb(163, 163, 208);
+            border-radius: 10%;
+        }
+        div>p{
+            text-decoration: underline solid rgb(227, 222, 222);
+        }
+    </style>
+</head>
+<body>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/outline -->
+     <!-- it does not take space in layout or box model of content  -->
+      <!-- outline is applied around elements, not per line of text. -->
+    <div>
+        <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi mollitia ad totam tempore sunt, a doloremque cupiditate corrupti tenetur placeat enim debitis reiciendis in laudantium.</p></div>
+    </div>
+</body>
+</html>

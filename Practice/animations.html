@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animations</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .containor{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80vw;
+            height: 80vh;
+            border: 2px solid purple;
+        }
+        .box{
+            width: 5vw;
+            height: 5vh;
+            border-bottom: 5px solid red;
+            /* background: red; */
+            border-radius: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            animation: loader 2s ease-in-out  infinite ;
+        }
+        @keyframes abraKaDabra {
+            0%{
+                left: 0;
+                top: 90%;
+            }
+            20%{
+                left: 18%;
+                top: 0%;
+            }
+            40%{
+                left: 36%;
+                top: 90%;
+            }
+            60%{
+                left: 54%;
+                top: 0%;
+            }
+            80%{
+                left: 72%;
+                top: 90%;
+            }
+            100%{
+                left: 90%;
+                top: 0%;
+            }
+            
+        }
+        @keyframes loader {
+            from{
+                transform: rotate(0);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="containor">
+        <div class="box">
+            
+        </div>
+    </div>
+</body>
+</html>

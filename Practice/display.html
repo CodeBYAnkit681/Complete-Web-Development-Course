@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div,span{
+            /* margin: auto; it will not work */
+            padding: 12px;
+            display: inline-block;
+            margin: 12px;
+            border: 2px solid brown;
+        }
+        .box2{
+            visibility: hidden;
+        }
+        .box1{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        i am box1
+    </div>
+    <span>i am span a inline element</span>
+    <div class="box2">
+        i am box2
+    </div>
+    
+</body>
+</html>

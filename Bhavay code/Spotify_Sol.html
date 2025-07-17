@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+      /** {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+
+
+        }
+
+        .navbar img {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .login {
+            position: relative;
+            border-radius: 10px;
+            height: 40px;
+            width: 40px;
+            font-size: larger;
+            cursor: pointer;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .login:hover {
+            color: royalblue;
+        }
+
+        .login:visited {
+            color: green;
+        }
+
+
+        .homebutton {
+            cursor: pointer;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: blue;
+        }*/
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      .navbar {
+        background-color: black;
+
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      body {
+        background-color: black;
+      }
+
+      .left,
+      .right {
+        width: 40%;
+        height: 100%;
+      }
+
+      .left {
+        display: flex;
+        color: wheat;
+      }
+
+      .icon {
+        width: 15%;
+        font-size: xx-large;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .search {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .home {
+        width: 15%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        font-size: larger;
+      }
+
+      @media screen and (min-width: 600px) {
+        .icon {
+          font-size: 2vw;
+        }
+
+        .home {
+          font-size: 1.2vw;
+          display: flex;
+          text-align: center;
+          justify-content: start;
+          align-items: center;
+        }
+
+        .home div{
+          width: 45px;
+          height: 45px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+      }
+
+      .home div {
+        border: 2px rgb(50, 50, 50) solid;
+        border-radius: 50%;
+        background-color: rgb(50, 50, 50);
+        padding: 1px;
+      }
+
+      .search {
+        background-color: rgb(40, 40, 40);
+        font-size: large;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 15px;
+        border-radius: 70px;
+        height: 60%;
+        padding: 5px;
+      }
+
+      input[type="text"] {
+        background-color: rgb(40, 40, 40);
+        color: white;
+        width: 80%;
+        height: 60%;
+        font-size: medium;
+        /* outline: 1px rgb(41, 41, 41) solid; */
+        border: none;
+      }
+      input[type="text"]:focus {
+        outline: none;
+      }
+      .rightside {
+        display: flex;
+        width: 40%;
+        justify-content: space-evenly;
+        /* font-size: x-large; */
+
+        align-items: center;
+      }
+      .signup {
+        /* font-size: xx-large; */
+        width: 20%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .divider {
+        width: 10%;
+        /* font-size: xx-large; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      .right {
+        display: flex;
+        color: white;
+        font-size: large;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .login {
+        width: 15%;
+
+        border-radius: 50px;
+        /* font-size: x-large; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        background-color: white;
+        height: 50%;
+      }
+      .install {
+        width: 20%;
+        /* font-size: xx-large; */
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+      /* mainbody start */
+      main{
+        height: 80vh;
+        width: 100vw;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        /* border-radius: 20px; */
+      }
+      .leftMain{
+        height: 100%;
+        width: 25%;
+        border: 2px solid white;
+        border-radius: 20px;
+
+      }
+      .Toplibrary{
+        margin: 5px;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .Toplibrary h2,.Toplibrary i{
+        color: white;
+        font-size: large;
+      }
+      .createLib{
+        
+        box-shadow: -1px -5px 20px 5px rgb(70, 69, 69);
+        width: 90%;
+        height :45%;
+        margin: auto;
+        display: flex;
+        padding: 5px;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        margin-top: 5vh;
+        border-radius: 10px;
+        scrollbar-color: rgb(50,50,50);
+        /* scroll-behavior: ; */
+        overflow-y: auto;
+      }
+      .createLib::-webkit-scrollbar{
+        display: none;
+      }
+      .rightMain::-webkit-scrollbar{
+        display: none;
+      }
+      .first{
+        display: flex;
+        gap: 10%;
+        font-size: 12px;
+        height: 45%;
+        border-radius: 10px;
+        padding: 5%;
+        /* padding: ; */
+        color: white;
+        background-color: rgb(47, 47, 47);
+        /* align-items: center; */
+        width: 98%;
+        border: 1px solid gray;
+        flex-direction: column;
+      }
+      .first button{
+        width: 50%;
+        height: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border-radius: 20px;
+      }
+      .links{
+        width: 80%;
+        height: 20vh;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        margin-top: 20px;
+        font-size: small;
+        color: rgb(121, 124, 126);
+        gap: 20px;
+        align-items: center;
+        line-height: 1.05;
+      }
+      #highlight{
+        align-self: flex-end;
+        width: 150px;
+        color: white;
+        font-size: medium;
+        cursor: pointer;
+      }
+      #highlight:hover{
+        text-decoration: underline;
+      }
+      .button{
+        color: white;
+        padding: 10px;
+        width: 25%;
+        margin-top: 10px;
+        margin-left: 20px;
+        outline: 1px solid white;
+        border-radius: 20px;
+        background: transparent;
+      }
+
+      /* right section starts  */
+      .rightMain{
+        height: 100%;
+        width: 74%;
+        overflow: auto;
+        border-radius: 20px;
+        border: 2px solid white;
+        padding: 20px;
+        scroll-behavior: smooth;
+        font-family: "Poppins", sans-serif;
+      }
+      .trending{
+        width: 100%;
+        height: 40vh;
+        margin-bottom: 20px;
+      }
+      .thead{
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding-inline: 20px;
+        margin-top: 5px;
+        height: 15%;
+      }
+      .th1{
+        font-size: x-large;
+        font-weight: 900;
+      }
+      .th1:hover,.show:hover{
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .songs{
+        height: 84%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        /* gap: 15px; */
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-left: 20px;
+        scroll-behavior: smooth;
+      }
+      .card{
+        display: flex;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 300px;
+        position: relative;
+        height: 100%;
+        padding: 10px;
+      }
+      .img{
+        width: 100%;
+        height: 70%;
+        /* border: 1px solid rgb(126, 126, 171); */
+      }
+      .img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* width: 20px; */
+      }
+      .songN{
+        color: white;
+
+      }
+      .SingerName{
+        color: rgb(165, 163, 163);
+      }
+      .playbutton{
+        background-color: #000000;
+        width: 50px;
+        height: 40px;
+        background-color: rgb(18, 216, 18);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: x-large;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        transform: translate(-50% -50%);
+        transition: transform 3s ease-in-out  ;
+      }
+
+      .card:hover .playbutton{
+        opacity: 1;
+        transform: translate(-50% -50%);
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <!-- <div class="image"><img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" 
+                alt="Spotify" class="logo" />
+        </div>
+        <div class="homebutton">home</div>
+        <div class="searchbar"><input type="text" placeholder="what to play?"></div>
+        <div class="links">
+            <a href="#" target="_blank">Premium</a>
+            <a href="#" target="_blank">download</a>
+            <a href="#" target="_blank">support</a>
+            <a href="#" target="_blank">hello</a>
+            <button type="button" class="login">login</button>
+        </div> -->
+      <div class="left">
+        <div class="icon"><i class="fa-brands fa-spotify"></i></div>
+        <div class="home">
+            <div>
+            <i class="fa-solid fa-house"></i>
+            </div>
+        </div>
+        <div class="search">
+        
+          <i
+            style="cursor: pointer"
+            class="fa-solid fa-magnifying-glass"
+            id="iconsearch"
+          >
+          </i>
+          <input type="text" placeholder="what to play ?" id="what" />|<i
+            style="cursor: pointer"
+            class="fa-solid fa-folder-open"
+          ></i>
+        </div>
+      </div>
+      <div class="right">
+        <div class="rightside">
+          <a href="#" target="_blank">premium</a>
+          <a href="#" target="_blank">support</a>
+          <a href="#" target="_blank">download</a>
+        </div>
+        <div class="divider">|</div>
+        <div class="install"><i class="fa-solid fa-download"></i>Install</div>
+        <div class="signup">
+          <a href="#" target="_blank">Signup</a>
+        </div>
+        <div class="login">Log in</div>
+      </div>
+    </nav>
+    <main>
+        <div class="leftMain">
+            <div class="Toplibrary">
+                <h2>Your Library</h2>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="createLib">
+                <div class="first">
+                    <h3>Create your first palylist</h3>
+                    <p>it's easy we will help you</p>
+                    <button>Create palylist</button>
+                </div>
+                <div class="first">
+                    <h3>Let's find some podcast to follow</h3>
+                    <p>We'll keep you updated on new episodes</p>
+                    <button>Browse </button>
+                </div>
+                <div class="first">
+                    <h3>Create your first palylist</h3>
+                    <p>it's easy we will help you</p>
+                    <button>Create palylist</button>
+                </div>
+            </div>
+            <div class="links">
+                <span>Legal</span><span>Service&Privacy Center</span><span>Privacy Policies</span><span>Cookies</span><span>About Ad</span><span>Accessibility</span><span id="highlight">Cookies</span>
+            </div>
+            <button class="button"><i class="fa-solid fa-globe"></i> English</button>
+        </div>
+        <div class="rightMain">
+            <div class="trending">
+              <div class="thead">
+                <div class="th1">Trending songs</div>
+                <div class="show"> Show all</div>
+              </div>
+              <div class="songs">
+                <div class="card">
+                  <div class="img">
+                    <img src="https://i.scdn.co/image/ab67616d00001e020a47bbe7141fdfe0eb2cdba7" alt="song image">
+                  </div>
+                  <div class="songN">
+                    Sahiba
+                  </div>
+                  <div class="SingerName">
+                    Aditya Rikhari
+                  </div>
+                  <div class="playbutton">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img">
+                    <img src="https://i.scdn.co/image/ab67616d00001e020a47bbe7141fdfe0eb2cdba7" alt="song image">
+                  </div>
+                  <div class="songN">
+                    Sahiba
+                  </div>
+                  <div class="SingerName">
+                    Aditya Rikhari
+                  </div>
+                  <div class="playbutton">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img">
+                    <img src="https://i.scdn.co/image/ab67616d00001e020a47bbe7141fdfe0eb2cdba7" alt="song image">
+                  </div>
+                  <div class="songN">
+                    Sahiba
+                  </div>
+                  <div class="SingerName">
+                    Aditya Rikhari
+                  </div>
+                  <div class="playbutton">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img">
+                    <img src="https://i.scdn.co/image/ab67616d00001e020a47bbe7141fdfe0eb2cdba7" alt="song image">
+                  </div>
+                  <div class="songN">
+                    Sahiba
+                  </div>
+                  <div class="SingerName">
+                    Aditya Rikhari
+                  </div>
+                  <div class="playbutton">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img">
+                    <img src="https://i.scdn.co/image/ab67616d00001e020a47bbe7141fdfe0eb2cdba7" alt="song image">
+                  </div>
+                  <div class="songN">
+                    Sahiba
+                  </div>
+                  <div class="SingerName">
+                    Aditya Rikhari
+                  </div>
+                  <div class="playbutton">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img">
+                    <img src="https://i.scdn.co/image/ab67616d00001e020a47bbe7141fdfe0eb2cdba7" alt="song image">
+                  </div>
+                  <div class="songN">
+                    Sahiba
+                  </div>
+                  <div class="SingerName">
+                    Aditya Rikhari
+                  </div>
+                  <div class="playbutton">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img">
+                    <img src="https://i.scdn.co/image/ab67616d00001e020a47bbe7141fdfe0eb2cdba7" alt="song image">
+                  </div>
+                  <div class="songN">
+                    Sahiba
+                  </div>
+                  <div class="SingerName">
+                    Aditya Rikhari
+                  </div>
+                  <div class="playbutton">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <!-- second part -->
+             <div class="trending">
+              <div class="thead">
+                <div class="th1">Trending songs</div>
+                <div class="show"> Show all</div>
+              </div>
+              <div class="songs">
+                <div class="card">
+                  <div class="img">
+                    <img src="https://i.scdn.co/image/ab67616d00001e020a47bbe7141fdfe0eb2cdba7" alt="song image">
+                  </div>
+                  <div class="songN">
+                    Sahiba
+                  </div>
+                  <div class="SingerName">
+                    Aditya Rikhari
+                  </div>
+                  <div class="playbutton">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img">
+                    <img src="https://i.scdn.co/image/ab67616d00001e020a47bbe7141fdfe0eb2cdba7" alt="song image">
+                  </div>
+                  <div class="songN">
+                    Sahiba
+                  </div>
+                  <div class="SingerName">
+                    Aditya Rikhari
+                  </div>
+                  <div class="playbutton">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img">
+                    <img src="https://i.scdn.co/image/ab67616d00001e020a47bbe7141fdfe0eb2cdba7" alt="song image">
+                  </div>
+                  <div class="songN">
+                    Sahiba
+                  </div>
+                  <div class="SingerName">
+                    Aditya Rikhari
+                  </div>
+                  <div class="playbutton">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img">
+                    <img src="https://i.scdn.co/image/ab67616d00001e020a47bbe7141fdfe0eb2cdba7" alt="song image">
+                  </div>
+                  <div class="songN">
+                    Sahiba
+                  </div>
+                  <div class="SingerName">
+                    Aditya Rikhari
+                  </div>
+                  <div class="playbutton">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img">
+                    <img src="https://i.scdn.co/image/ab67616d00001e020a47bbe7141fdfe0eb2cdba7" alt="song image">
+                  </div>
+                  <div class="songN">
+                    Sahiba
+                  </div>
+                  <div class="SingerName">
+                    Aditya Rikhari
+                  </div>
+                  <div class="playbutton">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img">
+                    <img src="https://i.scdn.co/image/ab67616d00001e020a47bbe7141fdfe0eb2cdba7" alt="song image">
+                  </div>
+                  <div class="songN">
+                    Sahiba
+                  </div>
+                  <div class="SingerName">
+                    Aditya Rikhari
+                  </div>
+                  <div class="playbutton">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img">
+                    <img src="https://i.scdn.co/image/ab67616d00001e020a47bbe7141fdfe0eb2cdba7" alt="song image">
+                  </div>
+                  <div class="songN">
+                    Sahiba
+                  </div>
+                  <div class="SingerName">
+                    Aditya Rikhari
+                  </div>
+                  <div class="playbutton">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+        </div>
+    </main>
+    <div class="adv"></div>
+  </body>
+</html>

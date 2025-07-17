@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animations</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .containor{
+            width: 80vw;
+            height: 80vh;
+            border: 2px solid red;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border-bottom: 5px solid purple;
+            /* background: purple; */
+            color: aliceblue;
+            /* position: absolute;
+            bottom: 1px; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation-name: abraKaDabra;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: 3; */
+            /* animation-direction: reverse; */
+
+            /* animation-fill-mode: backwards; */
+            animation: loader 2s ease-in-out 5 alternate ;
+            /* animation-play-state: paused; */
+        }
+        @keyframes abraKaDabra {
+            from{
+                background-color: purple;
+                left: 0px;
+            }
+            to{
+                background-color: rgb(12, 208, 94);
+                left: 200px;
+            }
+        }
+        @keyframes jumping {
+            0%{
+                bottom: 1px;
+                left: 0%;
+            }
+            20%{
+                bottom: 80%;
+                left: 18%;
+            }
+            40%{
+                bottom: 1px;
+                left: 36%;
+            }
+            60%{
+                bottom: 80%;
+                left: 54%;
+            }
+            80%{
+                bottom: 1px;
+                left: 72%;
+            }
+            /* 100%{
+                bottom: 80%;
+                left: 90%;
+            } */
+        }
+        @keyframes loader {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="containor">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

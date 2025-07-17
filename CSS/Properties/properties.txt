@@ -69,3 +69,11 @@ justifyitems, align items , repeat(4,1fr), repeat(4,minmax(100px, 1fr)) , justif
 items - grid :- (grid row and grid column like matrix) or use grid row-start and end, grid area , align self
 
 _______________________________________________________________________________________________________________________________________________________________________
+
+transform - rotate, scale, skew, translate,matrix
+
+transition - transition-property, transition duration, transition-timing-function, transition delay.
+
+animation: name duration timing-function delay iteration-count direction fill-mode;
+
+object-fit and filter

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Navbar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #000;
+        color: white;
+      }
+      .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 30px;
+        background-color: #000;
+      }
+
+      /* Left section */
+      .navbar-left {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .logo {
+        width: 32px;
+      }
+
+      .home-icon {
+        background-color: #1a1a1a;
+        padding: 10px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Search bar */
+      .search-bar {
+        display: flex;
+        align-items: center;
+        background-color: #1a1a1a;
+        border-radius: 50px;
+        padding: 8px 16px;
+        width: 400px;
+      }
+
+      .search-bar input {
+        background: transparent;
+        border: none;
+        outline: none;
+        color: white;
+        margin: 0 10px;
+        flex: 1;
+      }
+
+      .search-bar i {
+        color: gray;
+        font-size: 18px;
+      }
+
+      .divider {
+        height: 20px;
+        width: 1px;
+        background-color: gray;
+        margin: 0 10px;
+      }
+
+      /* Right section */
+      .navbar-right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 14px;
+      }
+
+      .navbar-right span {
+        color: #aaa;
+        cursor: pointer;
+      }
+
+      .login-btn {
+        background-color: white;
+        color: black;
+        padding: 8px 18px;
+        border-radius: 30px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <!-- Left -->
+        <div class="navbar-left">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg"
+            alt="Spotify"
+            class="logo"
+          />
+          <div class="home-icon">
+            <i class="fas fa-home"></i>
+          </div>
+
+          <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="What do you want to play?" />
+            <div class="divider"></div>
+            <i class="fa-solid fa-folder-open"></i>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <div class="navbar-right">
+          <span><strong>Premium</strong></span>
+          <span><strong>Support</strong></span>
+          <span><strong>Download</strong></span>
+          <div class="divider" style="height: 24px"></div>
+          <span><i class="fas fa-download"></i> Install App</span>
+          <span>Sign up</span>
+          <div class="login-btn">Log in</div>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
+<!--  -->

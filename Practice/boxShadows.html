@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadows</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .cards{
+            display: flex;
+        }
+        .cards div{
+            height: 200px;
+            width: 200px ;
+            margin: 5px;
+            background-color: brown;
+
+            box-shadow: 1px 5px 5px 1px rgb(58, 58, 58);
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <div class="card1">
+            Two, three, or four <length> values.
+            If only two values are given, they are interpreted as <offset-x> and <offset-y> values.</div>
+        <div class="card2">If a third value is given, it is interpreted as a <blur-radius>.</div>
+        <div class="card3">If a fourth value is given, it is interpreted as a <spread-radius>.</div>
+        <div class="card4">
+            Optionally, the inset keyword.
+            
+            Optionally, a <color> value.
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <style>
+      
+      .box {
+        margin: 50px;
+        display: flex;
+      }
+      .forn{
+        width: 50vw;
+        outline: 2px solid lightblue;
+        padding: 15px;
+        margin: auto;
+
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">GetHired</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="box">
+      <div class="para">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+          aperiam debitis assumenda, dicta architecto dolor porro non dolore
+          itaque officiis, omnis harum accusantium esse distinctio maxime, cum
+          perferendis sint! Dolorum dolore officiis atque ab doloribus. Vel
+          eligendi cupiditate quae fuga nobis nihil placeat esse quaerat iure
+          at, error deleniti molestias! Cupiditate, odit! Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Ex, rerum sunt? Quam perferendis
+          placeat, qui neque facere est obcaecati ducimus error corporis ex
+          voluptatum, facilis maxime laudantium maiores ut hic unde? Dolor
+          soluta at odit possimus cumque aperiam nihil, beatae quaerat
+          perspiciatis. Ipsum quam provident, cupiditate explicabo rem dolorum
+          tenetur ipsam numquam earum a dolor iste, id consequatur neque
+          corrupti maxime minus facere. Aut quisquam quibusdam minima alias,
+          reprehenderit aliquam libero in cum iste beatae? Esse possimus eaque
+          temporibus, quibusdam odio laudantium enim explicabo unde non ab
+          inventore cumque alias iusto officia est eos maxime sed. Porro cum
+          iusto atque, commodi inventore laudantium nobis tempore enim ratione
+          dicta illo impedit laboriosam earum, soluta excepturi quasi incidunt.
+          Delectus culpa possimus suscipit sint quaerat? Accusamus, illo
+          nesciunt.
+        </p>
+      </div>
+      <!-- table -->
+      <div class="table">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>John</td>
+              <td>Doe</td>
+              <td>@social</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- form -->
+    <form class="forn">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+        />
+        <div id="emailHelp" class="form-text">
+          We'll never share your email with anyone else.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="exampleInputPassword1"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Phone Number</label>
+        <input
+          type="number"
+          class="form-control"
+          id="exampleInputPassword1"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter your name"
+          id="exampleInputPassword1"
+        />
+      </div>
+      <div class="mb-3 form-check text-danger ">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <!-- bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
